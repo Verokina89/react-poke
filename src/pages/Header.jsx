@@ -1,4 +1,4 @@
-import PokemonLogo from '../assets/img/descarga.png'
+import PokemonLogo from '../assets/img/pokemonGo.jpeg'
 
 const Header = () => (
     <header>
