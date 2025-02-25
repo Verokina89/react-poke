@@ -1,4 +1,4 @@
-//ara el manej de erores(cuando no se encuentra el pke  falla la aAPI)
+//maneja errores (cuando no se encuentra el pokemon; falla la aAPI)
 import PropTypes from 'prop-types';
 
 function ErrorMessage({ message }) {

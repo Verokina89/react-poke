@@ -44,8 +44,7 @@ table {
 	border-spacing: 0;
 }
 
-
-/*CODIGO*/
+/*------MI CODIGO------*/
 
 #root {
   max-width: 1280px;
@@ -70,7 +69,7 @@ body{
 }
 
 header {
-  color: rgb(14, 3, 133);
+  color: rgb(220, 218, 239);
   text-align: center;
   padding: 60px;
 }
@@ -85,17 +84,15 @@ form {
 	gap: 20px;
 } 
 
-
-
 .pokemonCard{
-  display: flex;
+  	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	background-color: rgba(19, 5, 171, 0.189);
+	background-color: rgba(221, 224, 244, 0.787);
 	border-radius: 15px;
-	background-image: url("./assets/img/blob.svg");
+	background-image: url("./assets/img/pokemon-go-4k-computer-desktop-background-wallpaper-preview.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: 20px;
@@ -106,17 +103,17 @@ form {
 }
 
 label{
-	font-size: 60px;
+	font-size: 30px;
 }
 
 h2{
 	font-size: 3em;
-  padding: 2px;
-  margin: 20px;
+  	padding: 2px;
+  	margin: 20px;
 }
 
 input {
-  font-size: 2em;
+  	font-size: 1em;
 	padding: 8px;
 	margin: 20px;
 	border: 1px solid #ddd;
@@ -125,8 +122,8 @@ input {
 
 p {
 	font-size: 2em;
-  padding: 2px;
-  margin: 20px;
+  	padding: 2px;
+  	margin: 20px;
 }
 
 button{

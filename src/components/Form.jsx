@@ -13,17 +13,17 @@ function Form() {
       setError(null);                  // antes de la busqueda reinicia messag err
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`);
       if (!response.ok) {
-        throw new Error('Pokemon no encontrado');   // si no encuentr da error
+        throw new Error('Pokemon no encontrado');    // si no encuentr da error
       }
       const data = await response.json(); 
-      setPokemon(data);                           // guarda el pokmn
+      setPokemon(data);                              // guarda el pokemon
     } catch (err) {
       setError(err.message); 
-      setPokemon(null);              // Borra datos anteriores
+      setPokemon(null);                              // Borra datos anteriores
     }
   };
 
-  //cuando `pokemonName`cambia hace la busqueda auntomatic
+  //cuando `pokemonName`cambia hace la busqueda auntomatica
   useEffect(() => {
     if (pokemonName) {
       fetchPokemon(pokemonName);
