@@ -1,8 +1,8 @@
-import PokemonLogo from '../assets/img/pokemonGo.jpeg'
+import PokemonEmblema from '../assets/img/PokemonEmblema.jpg'
 
 const Header = () => (
     <header>
-        <img src={PokemonLogo} className='logoPokemon' alt="Logo Pokemon" />
+        <img src={PokemonEmblema} className='logoPokemon' alt="Logo Pokemon" />
         <h1>Buscador de Pokemon</h1>
   </header>
 )
