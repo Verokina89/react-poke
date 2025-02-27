@@ -51,6 +51,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   color: black;
   background-color: darkkhaki; /* Color más oscuro al pasar el mouse */
