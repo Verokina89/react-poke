@@ -3,10 +3,15 @@ import { useState, useEffect } from 'react';
 import ErrorMessage from './ErrorMessage'
 
 function Form() {
-  const [pokemon, setPokemon] = useState(null);
-  const [pokemonName, setPokemonName] = useState('');  //estado para manejar nombre
+  const [pokemonName, setPokemonName] = useState('');    //estado para manejar nombre;lo iniciamos vacio pq es tipo texto y hay que darle el string vacio.
+  const [pokemon, setPokemon] = useState(null);      // tiene que ser un false de inicio para que pueda indicar que no existe hasta encuentra la data
+  const [error, setError] = useState(null);      //estado para manjar errores; tiene que ser null que no haya nada para al darse el error lo indique.
+  const [loading, setLoading] = useState(false);  // tiene que comenzar con false para que dependiendo del cambio del estado indique cuando sea true realmente para indicar el loading. 
+
+  
+
   const [abilities, setAbilities] = useState([]);     //estado para traducir habilidades
-  const [error, setError] = useState(null);      //estado para manjar errores
+
 
   //function obtener habilidades traducidas
   const fetchAbilitiesInSpanish = async (url) => {
